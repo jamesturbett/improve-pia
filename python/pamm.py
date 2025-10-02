@@ -2,13 +2,15 @@ def calc_pamm_bounds(
     progs: int, prefs_before: int, pub_ratio_after: float
 ) -> int | tuple[int, int]:
 
+    # Can't PAMM more than number of progs or first choice prefs
     max_poss_pamm = min(progs, prefs_before)
 
     valid_pamm_vals: list[int] = []
 
-    # Try each possible num_pamm value
+    # Try each possible number of PAMM applicants
     for num_pamm in range(max_poss_pamm + 1):
 
+        # Calculate remaining prefs and progs after PAMM
         prefs_after = prefs_before - num_pamm
         progs_after = progs - num_pamm
 
