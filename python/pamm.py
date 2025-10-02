@@ -6,15 +6,20 @@ def calc_pamm_bounds(
 
     valid_pamm_vals: list[int] = []
 
-    # Try each possible num_pamm value, and see if it yields the pub competition ratio after num_pamm
+    # Try each possible num_pamm value
     for num_pamm in range(max_poss_pamm + 1):
+
         prefs_after = prefs_before - num_pamm
         progs_after = progs - num_pamm
-        if (
-            progs_after > 0
-        ):  # Can't PAMM all programmes otherwise competition ratio becomes infinite
+
+        # Can't PAMM all progs otherwise comp ratio becomes inf
+        if progs_after > 0:
+
+            # Calculate the exact ratio after PAMM and round to 2dp
             exact_ratio_after = prefs_after / progs_after
             ratio_after_2dp = round(exact_ratio_after, 2)
+
+            # Check if matches the published ratio after PAMM
             if ratio_after_2dp == pub_ratio_after:
                 valid_pamm_vals.append(num_pamm)
 
