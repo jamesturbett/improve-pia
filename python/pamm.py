@@ -1,6 +1,6 @@
 def calculate_pamm_bounds(
     progs: int, prefs_before: int, ratio_after_ukfpo: float
-) -> int | tuple[int, ...]:
+) -> int | tuple[int, int]:
 
     max_possible_pamm = min(progs, prefs_before)
 
