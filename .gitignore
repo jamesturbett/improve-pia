@@ -7,5 +7,5 @@
 # Python cache
 __pycache__/
 
-# Dirty (unstripped) Jupyter notebooks
-notebooks/dirty/
+# Unstripped Jupyter notebooks
+*unstripped*.ipynb
