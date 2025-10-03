@@ -14,7 +14,7 @@ This repository contains CSV versions of **publicly available datasets** publish
 
 ## Usage
 
-- The CSV files are **direct conversions** of the original datasets; no other modifications have been made.
+- The CSV files are **direct conversions** of the original datasets with abbreviated column headings.
 - Use of the data is presumed to be subject to the terms of the [Open Government Licence v3 (OGL v3)](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 - Users should **acknowledge the UKFP website** as the original source when using the data.  
 - **Do not imply endorsement** by UKFPO, NHS England, or any other party.  
