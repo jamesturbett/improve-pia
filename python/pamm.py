@@ -3,7 +3,7 @@ def calc_pamm_bounds(
 ) -> int | tuple[int, int]:
 
     # Can't PAMM more than number of progs or first choice prefs
-    max_poss_pamm = min(progs, prefs_before)
+    max_poss_pamm: int = int(min(progs, prefs_before))
 
     valid_pamm_vals: list[int] = []
 
