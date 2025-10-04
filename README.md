@@ -7,3 +7,8 @@
 Radiology Registrar  
 St Bartholomew's and The Royal London Hospitals (Barts Health NHS Trust)  
 London, UK
+
+## Progress
+- :white_check_mark: Code logic for calculating PAMM bounds (`pamm.py`)
+- :white_check_mark: Calculate PAMM bounds for each foundation school each year (`pamm.ipynb`)
+- :arrows_counterclockwise: Point estimates for PAMM counts (?integer optimisation over bounds)
